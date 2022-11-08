@@ -1,0 +1,445 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF MEYER CSS RESET */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
+/* Page CSS */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+a:hover {
+  transform: scale(1.02);
+  opacity: 0.7;
+}
+blockquote {
+  padding: 0 50px;
+  font-style: italic;
+}
+i {
+  font-style: italic;
+}
+.inTxtCite {
+  font-style: italic;
+}
+.header {
+  height: 10rem;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  padding: 2rem;
+  position: fixed;
+  background: #fff;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #990099;
+}
+.brandSpan {
+  color: #d597d5;
+}
+.h_s1 {
+  font-family: "Montserrat", sans-serif;
+  margin: 15px 0;
+  color: #d597d5a8;
+  font-weight: 200;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10rem;
+}
+.backHome {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.backHome > a {
+  color: #000;
+}
+.mainCtWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.menu {
+  padding: 2rem;
+  padding-top: 0.5rem;
+  height: fit-content;
+  /* border: 1px solid black; */
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.invisible {
+  display: none;
+}
+.menu > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 15px;
+}
+.menuWrapper {
+  /* border: 1px solid black; */
+  border-radius: 0.2rem;
+  height: 30px;
+  min-width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menuItems {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: black;
+}
+.pageContentWrapper {
+  padding: 3rem;
+  padding-top: 1rem;
+  font-family: "Lato", sans-serif;
+}
+.pageContent {
+  margin-bottom: 3rem;
+  width: 45vw;
+}
+.mc_title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #990099;
+  margin-bottom: 3rem;
+}
+.mc_text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.mc_text > a {
+  text-decoration: underline;
+  font-style: italic;
+}
+.footer {
+  margin-top: auto;
+}
+.ltrt {
+  display: flex;
+  justify-content: space-between;
+}
+.ltrt_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ltrt_box {
+  background: #f8edf8;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  width: 8rem;
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 0.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.ltrt_text {
+  color: #990099;
+}
+.ltrt_textBox {
+  padding: 0.5rem;
+  width: 4.6rem;
+
+  background: #e9cae9;
+  filter: blur(0.25px);
+  border-radius: 2px;
+}
+.rtNxt {
+  text-align: right;
+}
+.navChevron {
+  height: 1.4rem;
+  margin-right: 0.3rem;
+}
+.ncRt {
+  transform: scaleX(-1);
+  margin-left: 0.3rem;
+  margin-right: 0;
+}
+.disable {
+  visibility: hidden;
+}
+.adWrapper {
+  padding-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+}
+.ad {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  width: 15rem;
+  height: fit-content;
+  /* Add blur */
+}
+.ad_img {
+  width: 15rem;
+}
+.adInfo,
+.adInfo > a {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+.references {
+  background: rgba(0, 0, 0, 0.05);
+  width: 23vw;
+  height: fit-content;
+  border-radius: 0.2rem;
+  padding: 2rem;
+  font-family: "Lato", sans-serif;
+  margin: 20px 0;
+}
+.references h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.references p {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.footer {
+  font-family: "Montserrat", sans-serif;
+  border-top: 2px solid #f3f3f3;
+}
+.f_grey {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 1rem 0;
+  /* border: 1px solid black; */
+}
+.f1,
+.f3 {
+  margin: 10px 20px;
+}
+.f2 {
+  background: #f3f3f3;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.f2 > a {
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  color: #990099;
+}
+.goToTopWrapper {
+  position: absolute;
+  width: 100vw;
+
+  display: flex;
+}
+.goToTop {
+  position: fixed;
+  top: 80vh;
+  left: 94vw;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goToTop > a {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 900;
+
+  position: relative;
+  top: -3px;
+}
+.goToTop > a:hover {
+  transform: none;
+  opacity: 1;
+}
+#menuShow_Wrapper {
+  width: 200px;
+  height: 40px;
+  border-radius: 0.1rem;
+  border: 2px solid #f8edf8;
+  background: #990099;
+  margin-bottom: 15px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #f8edf8;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuTrigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menuTrigger > img {
+  height: 17px;
+  color: white;
+}

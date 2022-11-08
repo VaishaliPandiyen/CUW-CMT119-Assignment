@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END OF MEYER CSS RESET */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
+/* landing page css */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#990099, #d597d5);
+  /* , #eecaee */
+  /* Background image source: https://unsplash.com/photos/pADY3zxqD70  */
+  background: url(../../images/lavender.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.landing {
+  min-height: 50vh;
+  min-width: 50vw;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 0.2rem;
+  border: 0.1rem solid silver;
+  /* filter: blur(2px); */
+  /* opacity: 0.5; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ld_title {
+  color: rgb(53, 28, 51);
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  /* border: 1px solid silver; */
+  text-shadow: 0 0 3px silver;
+  padding: 20px;
+}
+@media (max-width: 530px) {
+  .ld_title {
+    font-size: 3rem;
+  }
+}
+.ld_nav {
+  margin: 30px 15px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ld_nav a {
+  text-decoration: none;
+  text-shadow: 0 0 2px #d597d5;
+  color: rgb(53, 28, 51);
+  font-family: "Monteserrat", sans-serif;
+  font-size: 1.1rem;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.3rem;
+}
+.ld_nav > a:hover {
+  transform: scale(1.02);
+}

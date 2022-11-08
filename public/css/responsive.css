@@ -1,0 +1,40 @@
+@media (max-width: 1090px) {
+  .header {
+    background: #f8edf8;
+  }
+  .mainCtWrapper {
+    flex-wrap: wrap;
+  }
+  .references {
+    width: 100vw;
+  }
+  .goToTop {
+    left: 90vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu {
+    border: none;
+  }
+  #menuShow_Wrapper {
+    display: flex;
+  }
+  .menuWrapper {
+    background: rgba(217, 217, 217, 0.3);
+    border-radius: 2px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    width: 200px;
+    min-height: 35px;
+  }
+  .menu > ul {
+    display: none;
+  }
+  .pageContent {
+    width: 80vw;
+  }
+  .goToTop {
+    left: 85vw;
+  }
+}
